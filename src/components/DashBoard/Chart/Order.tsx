@@ -8,6 +8,8 @@ import
         Legend,
     } from 'chart.js';
 import { PolarArea } from 'react-chartjs-2';
+import dynamic from 'next/dynamic';
+const ChartTitle = dynamic(() => import('./ChartTitle'))
 
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
@@ -33,7 +35,7 @@ export const data = {
 export function Order()
 {
     return (<div className='w-[30%] h-5/6 text-slate-900 font-medium text-sm'>
-        <h4 className='pb-4'>Total Orders:</h4>
+        <ChartTitle title="Total Order"></ChartTitle>
         <PolarArea data={data} />
     </div>)
 }

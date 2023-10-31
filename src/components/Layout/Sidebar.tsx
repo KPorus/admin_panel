@@ -24,10 +24,8 @@ const Sidebar = () =>
                 items={[
                     {
                         key: '0',
-                        icon: <Image src={'https://img.icons8.com/?size=256&id=68733&format=png'} alt="logo" height={50} width={50} style={{
-                            width:40
-                        }}/>,
-                        label: <Link href={'/'} className="text-xs font-bold uppercase">Admin Panel</Link>,
+                        icon: <Image src={'https://img.icons8.com/?size=256&id=68733&format=png'} alt="logo" className=" absolute w-[40px] h-[40px] left-[1.1rem]" height={50} width={50} />,
+                        label: <Link href={'/'} className="text-xs font-bold uppercase ml-6">Admin Panel</Link>
                     },
                     {
                         key: '1',

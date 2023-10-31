@@ -1,6 +1,7 @@
 import React from 'react';
 import { Order } from '../DashBoard/Chart/Order';
 import dynamic from 'next/dynamic';
+import { User_login } from '../DashBoard/Chart/User_login';
 const Total_product = dynamic(() => import('@/components/DashBoard/Total_product'));
 const Total_user = dynamic(() => import('@/components/DashBoard/Total_user'));
 const Last_login = dynamic(() => import('@/components/DashBoard/Last_login'));
@@ -24,7 +25,7 @@ const Homepage = () => {
             <div className='ml-10 mt-7 '>
                 <div className='flex justify-start items-center gap-10'>
                     <Order></Order>
-                    <Order></Order>
+                    <User_login></User_login>
                 </div>
             </div>
         </div>
