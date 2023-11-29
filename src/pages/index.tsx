@@ -15,7 +15,7 @@ export default function Home()
         <div className='text-start p-3 uppercase text-slate-900 font-medium'>
           Welcome admin
         </div>
-        <div className="text-start p-3 uppercase text-slate-900 font-medium"><Date_Picker></Date_Picker></div>
+        <div className="text-start uppercase text-slate-900 font-medium"><Date_Picker></Date_Picker></div>
       </div>
       <Homepage></Homepage>
     </main>

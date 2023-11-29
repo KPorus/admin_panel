@@ -2,6 +2,7 @@ import React from 'react';
 import { Order } from '../DashBoard/Chart/Order';
 import dynamic from 'next/dynamic';
 import { User_login } from '../DashBoard/Chart/User_login';
+import User from '../DashBoard/User_Table/User';
 const Total_product = dynamic(() => import('@/components/DashBoard/Total_product'));
 const Total_user = dynamic(() => import('@/components/DashBoard/Total_user'));
 const Last_login = dynamic(() => import('@/components/DashBoard/Last_login'));
@@ -16,8 +17,8 @@ const Homepage = () => {
                         <Total_user />
                         <Last_login />
                     </div>
-                    <div className='bg-[#ff7f16] w-[35%] h-36 px-5 rounded-md mt-4 ml-3'>
-                        Action log
+                    <div >
+                        <User/>
                     </div>
                 </div>
                 <ActionLog />
