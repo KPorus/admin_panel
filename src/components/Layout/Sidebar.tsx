@@ -35,7 +35,7 @@ const Sidebar = () =>
                     {
                         key: '2',
                         icon: <UserOutlined />,
-                        label: 'Users',
+                        label: <Link href={'/Users'}>Users</Link>,
                     },
                     {
                         key: '3',
