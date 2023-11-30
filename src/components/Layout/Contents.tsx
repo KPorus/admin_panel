@@ -7,8 +7,7 @@ const Contents = ({ children }: { children: React.ReactNode }) =>
     return (
         <Content
             style={{
-                minHeight: "100vh",
-
+                minHeight: "100vh"
             }}
         >
             {children}

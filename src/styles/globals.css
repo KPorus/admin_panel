@@ -26,15 +26,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-:where(.css-dev-only-do-not-override-qgg3xn).ant-layout .ant-layout-sider-children {
+/* :where(.css-dev-only-do-not-override-qgg3xn).ant-layout .ant-layout-sider-children {
     position: fixed !important;
-}
+} */
 
-input::placeholder{
+/* input::placeholder{
   font-weight: medium;
   color: black;
 }
 
 input{
   box-shadow:0px 1px 1px #000000a1;
-}
+} */
