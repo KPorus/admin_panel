@@ -10,9 +10,9 @@ const ActionLog = dynamic(() => import('@/components/DashBoard/ActionLog'));
 const Homepage = () => {
     return (
         <div>
-            <div className='flex justify-around gap-2 pl-3'>
+            <div className='md:flex justify-around gap-2 pl-3'>
                 <div className='flex flex-col'>
-                    <div className='flex justify-start items-center gap-2 pl-2'>
+                    <div className='flex flex-col sm:flex-row sm:justify-start items-center gap-2 pl-2'>
                         <Total_product />
                         <Total_user />
                         <Last_login />
@@ -24,7 +24,7 @@ const Homepage = () => {
                 <ActionLog />
             </div>
             <div className='ml-10 mt-7 '>
-                <div className='flex justify-start items-center gap-10'>
+                <div className='md:flex md:justify-start items-center gap-10'>
                     <Order></Order>
                     <User_login></User_login>
                 </div>
