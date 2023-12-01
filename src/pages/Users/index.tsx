@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import dynamic from "next/dynamic";
+import SideBar from '@/components/Layout/Sidebar';
 
 const RootLayouts = dynamic(() => import("@/components/Layout/RootLayouts"));
 const AllUsers = dynamic(() => import('@/components/AllUsers/AllUsers'));
@@ -23,5 +24,5 @@ export default index;
 
 index.getLayout = function getLayout(page: ReactNode)
 {
-    return <RootLayouts>{page}</RootLayouts>;
+    return <SideBar>{page}</SideBar>;
 };

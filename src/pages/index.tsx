@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import dynamic from "next/dynamic";
+import SideBar from "@/components/Layout/Sidebar";
 const RootLayouts = dynamic(() => import("@/components/Layout/RootLayouts"));
 const HeadTag = dynamic(() => import("@/Helpers/HeadTag/HeadTag"));
 const Homepage = dynamic(() => import("@/components/Home/Homepage"));
@@ -24,5 +25,5 @@ export default function Home()
 
 Home.getLayout = function getLayout(page: ReactNode)
 {
-  return <RootLayouts>{page}</RootLayouts>;
+  return <SideBar>{page}</SideBar>;
 };
