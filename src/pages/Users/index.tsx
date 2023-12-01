@@ -1,8 +1,7 @@
 import React, { ReactNode } from 'react';
 import dynamic from "next/dynamic";
-import SideBar from '@/components/Layout/Sidebar';
 
-const RootLayouts = dynamic(() => import("@/components/Layout/RootLayouts"));
+const SideBar = dynamic(() => import("@/components/Layout/Sidebar"));
 const AllUsers = dynamic(() => import('@/components/AllUsers/AllUsers'));
 const InputTag = dynamic(() => import('@/Helpers/InputTag/InputTag'));
 const HeadTag = dynamic(() => import("@/Helpers/HeadTag/HeadTag"));

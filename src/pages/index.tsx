@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import dynamic from "next/dynamic";
-import SideBar from "@/components/Layout/Sidebar";
-const RootLayouts = dynamic(() => import("@/components/Layout/RootLayouts"));
+const SideBar = dynamic(() => import("@/components/Layout/Sidebar"));
 const HeadTag = dynamic(() => import("@/Helpers/HeadTag/HeadTag"));
 const Homepage = dynamic(() => import("@/components/Home/Homepage"));
 const Date_Picker = dynamic(() => import("@/components/DashBoard/DatePicker/Date_Picker"));
